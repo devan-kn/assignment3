@@ -1,28 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task list</title>
-    <link rel="stylesheet" href="style1.css"
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tasks</title>
+
+    <link
+        rel="stylesheet"
+        href="style/styl.css"
+    >
+
 </head>
+
 <body>
 
-    <header>
-       <nav>
-        <h1>Trello </h1>
-        <h2><img src="logo.png" alt="Profile"></h2>
-       </nav>
+    <header class="navbar">
+
+        <div class="nav-left">
+
+            <span class="app-title">
+                Tasks
+            </span>
+
+
+        </div>
+
+        <div class="nav-right">
+
+            <button
+                class="user-avatar"
+                type="button"
+                aria-label="User Profile"
+            >
+
+                <img
+                    src="avatar.png"
+                    alt="Profile Avatar"
+                >
+
+            </button>
+
+        </div>
+
     </header>
 
-    <main>
-        
-    </main>
 
-    <footer>
-       
-    </footer>
+    <div class="app-container">
+
+        <aside class="sidebar">
+
+            <h2 class="sidebar-title">
+                MY BOARDS
+            </h2>
+
+            <ul class="board-list">
+
+                <li class="board-item active">
+
+                    <i class="icon-board"></i>
+
+                    <span>
+                        Website Launch
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="board-header">
+
+                <h1 class="board-title">
+                    Website Launch
+                </h1>
+
+                <div class="board-actions">
+
+                    <button
+                        class="btn btn-action"
+                        type="button"
+                    >
+
+                        <i class="icon-edit"></i>
+
+                        Rename
+
+                    </button>
+
+                    <button
+                        class="btn btn-action btn-danger"
+                        type="button"
+                    >
+
+                        <i class="icon-trash"></i>
+
+                        Delete Board
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <div class="board-columns">
+
+                <section class="column">
+
+                    <div class="column-header">
+
+                        <h2 class="column-title">
+                            To Do
+                        </h2>
+
+                        <button
+                            class="icon-btn col-options"
+                            type="button"
+                            aria-label="Column Options"
+                        >
+
+                            <i class="icon-more"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div
+                        class="card-list"
+                        id="todo-list"
+                    ></div>
+
+                    <button
+                        class="btn add-card-btn"
+                        type="button"
+                    >
+                        + Add a card
+                    </button>
+
+                </section>
+
+
+                <section class="column">
+
+                    <div class="column-header">
+
+                        <h2 class="column-title text-warning">
+                            In Progress
+                        </h2>
+
+                        <button
+                            class="icon-btn col-options"
+                            type="button"
+                            aria-label="Column Options"
+                        >
+
+                            <i class="icon-more"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div
+                        class="card-list"
+                        id="progress-list"
+                    ></div>
+
+                    <button
+                        class="btn add-card-btn"
+                        type="button"
+                    >
+                        + Add a card
+                    </button>
+
+                </section>
+
+
+                <section class="column">
+
+                    <div class="column-header">
+
+                        <h2 class="column-title text-success">
+                            Done
+                        </h2>
+
+                        <button
+                            class="icon-btn col-options"
+                            type="button"
+                            aria-label="Column Options"
+                        >
+
+                            <i class="icon-more"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div
+                        class="card-list"
+                        id="done-list"
+                    ></div>
+
+                    <button
+                        class="btn add-card-btn"
+                        type="button"
+                    >
+                        + Add a card
+                    </button>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
 
     <script src="script.js"></script>
+
 </body>
+
 </html>

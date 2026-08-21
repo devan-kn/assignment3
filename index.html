@@ -42,7 +42,7 @@
 
                 <img
                     src="avatar.png"
-                    alt="Profile Avatar"
+                    alt="Logo"
                 >
 
             </button>
@@ -81,7 +81,7 @@
 
             <header class="board-header">
 
-                <h1 class="board-title">
+                <h1 id ="board-title">
                     Website Launch
                 </h1>
 
@@ -90,9 +90,8 @@
                     <button
                         class="btn btn-action"
                         type="button"
+                        id="rename-board-btn"
                     >
-
-                        <i class="icon-edit"></i>
 
                         Rename
 
@@ -101,6 +100,7 @@
                     <button
                         class="btn btn-action btn-danger"
                         type="button"
+                        id="delete-board-btn"
                     >
 
                         <i class="icon-trash"></i>
@@ -124,22 +124,14 @@
                             To Do
                         </h2>
 
-                        <button
-                            class="icon-btn col-options"
-                            type="button"
-                            aria-label="Column Options"
-                        >
-
-                            <i class="icon-more"></i>
-
-                        </button>
-
                     </div>
 
                     <div
                         class="card-list"
                         id="todo-list"
-                    ></div>
+                    >
+                   
+                    </div>
 
                     <button
                         class="btn add-card-btn"
@@ -159,15 +151,6 @@
                             In Progress
                         </h2>
 
-                        <button
-                            class="icon-btn col-options"
-                            type="button"
-                            aria-label="Column Options"
-                        >
-
-                            <i class="icon-more"></i>
-
-                        </button>
 
                     </div>
 
@@ -194,15 +177,6 @@
                             Done
                         </h2>
 
-                        <button
-                            class="icon-btn col-options"
-                            type="button"
-                            aria-label="Column Options"
-                        >
-
-                            <i class="icon-more"></i>
-
-                        </button>
 
                     </div>
 
@@ -227,7 +201,7 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 
 </body>
 
